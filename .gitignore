@@ -3,6 +3,8 @@
 *.DS_Store
 
 # C++
+*.o
+*.obj
 
 # Prerequisites
 *.d
