@@ -3,7 +3,7 @@
 
 def binarySearch(data, left_Index, right_Index, x):  # Recursive approach
 
-    if right_Index >= left_Index:
+    if right_Index >= left_Index:   # Base case
         mid_Index = (left_Index + right_Index) // 2
         mid_Num = data[mid_Index]
 
