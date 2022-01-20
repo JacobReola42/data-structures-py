@@ -5,6 +5,7 @@ Data Structures:
 
 Directories
 ===========
+:algorithims:
 :stack_queue:
 :linked_list:
 :tree:
