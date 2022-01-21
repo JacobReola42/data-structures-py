@@ -32,7 +32,7 @@ class Queue:
             return ("CAN'T DEQUEUE, EMPTY!")
         
         answer = self.queue[self.front]
-        self.queue[self.front] = None
+        self.queue[self.front] = None   # helps with garbage collection
         self.front = (self.front + 1) % len(self.queue)
         self.size -= 1
         return answer
