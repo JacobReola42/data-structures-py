@@ -33,13 +33,9 @@ class Queue:
         
         answer = self.queue[self.front]
         self.queue[self.front] = None   # helps with garbage collection
-        self.front = (self.front + 1) % len(self.queue)
+        self.front = (self.front + 1) % len(self.queue)     # Circular semantics
         self.size -= 1
         return answer
 
     def getSize(self):
         return self.size
-            
-
-
-
