@@ -2,12 +2,13 @@
 # Copyright 2022 Jacob Reola, all rights reserved
 
 # Uses queue data structure
+
 def bfs(data, start, visited=set()):
 
     queue = [start]
 
     while queue:
-        vertex = queue.pop(0)
+        vertex = queue.pop()
         if vertex not in visited:
             print(vertex, end=" ")
 
