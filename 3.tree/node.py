@@ -9,17 +9,17 @@ class TreeNode:
 		self.rightChild = None
 		
 	def insertNode(self, data):
-		if self.value == data:
+		if self.value == data:  # If data is there, don't add it. duplicates.
 			return False
 			
 		elif self.value > data:
 			if self.leftChild:
 				return self.leftChild.insertNode(data)
-			else:
+			else:   # No left child, create new node.
 				self.leftChild = TreeNode(data)
 				return True
 
-		else:
+		else:   # self.value < data
 			if self.rightChild:
 				return self.rightChild.insertNode(data)
 			else:
@@ -27,9 +27,9 @@ class TreeNode:
 				return True
 				
 	def locateNode(self, data):
-		if(self.value == data):
+		if self.value == data:
 			return True
-		elif self.value > data:
+		elif self.value > data: # Binary search
 			if self.leftChild:
 				return self.leftChild.locateNode(data)
 			else:
@@ -83,3 +83,7 @@ class TreeNode:
 			if self.rightChild:
 				self.rightChild.postorderNodes()
 			print (str(self.value), end=' ')
+
+"""
+Helper class
+"""

@@ -16,9 +16,9 @@ class BTree:
 			return True
 
 	def find(self, data):
-		if self.root:
+		if self.root: 
 			return self.root.locateNode(data)
-		else:
+		else:   # no root node
 			return False
 			
 	def getHeight(self):
@@ -47,7 +47,7 @@ class BTree:
 			elif self.root.leftChild is None and self.root.rightChild:
 				self.root = self.root.rightChild
 			elif self.root.leftChild and self.root.rightChild:
-				delNodeParent = self.root
+				delNodeParent = self.root   # delNode for subtree, lowest value.
 				delNode = self.root.rightChild
 				while delNode.leftChild:
 					delNodeParent = delNode
@@ -67,10 +67,11 @@ class BTree:
 						
 			return True
 		
+        # Assume we do not have an empty tree at this point, and data is not in the root.
 		parent = None
 		node = self.root
 		
-		# find node to remove
+		# Decscend tree to find node to remove
 		while node and node.value != data:
 			parent = node
 			if data < node.value:
