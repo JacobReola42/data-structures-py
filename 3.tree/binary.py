@@ -46,9 +46,10 @@ class BTree:
 				self.root = self.root.leftChild
 			elif self.root.leftChild is None and self.root.rightChild:
 				self.root = self.root.rightChild
+
 			elif self.root.leftChild and self.root.rightChild:
-				delNodeParent = self.root   # delNode for subtree, lowest value.
-				delNode = self.root.rightChild
+				delNodeParent = self.root # for right subtree lowest value
+				delNode = self.root.rightChild  # delNode for subtree, lowest value.
 				while delNode.leftChild:
 					delNodeParent = delNode
 					delNode = delNode.leftChild
@@ -67,11 +68,11 @@ class BTree:
 						
 			return True
 		
-        # Assume we do not have an empty tree at this point, and data is not in the root.
+        # Assume the tree is not an empty tree at this point, and data is not in the root.
 		parent = None
 		node = self.root
 		
-		# Decscend tree to find node to remove
+		# Descend tree to find node to remove
 		while node and node.value != data:
 			parent = node
 			if data < node.value:
@@ -141,3 +142,7 @@ class BTree:
 		if self.root is not None:
 			print("\nPostOrder")
 			self.root.postorderNodes()
+
+"""
+Joe James helpful link: https://www.youtube.com/watch?v=LSju119w8BE&list=PLj8W7XIvO93qsmdxbaDpIvM1KCyNO1K_c&index=11
+"""
