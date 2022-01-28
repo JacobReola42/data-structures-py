@@ -3,14 +3,8 @@
 
 from node import Vertex
 
-# Graph is child, inherting Vertex, use with line 12, 13 or without.
+# Child inheriting 
 class Graph(Vertex):
-# class Graph():   # use with line 11 and12
-
-    # Another form of inheritence
-    # def __init__(self, nodes, is_directed=False):
-    #    Vertex.__init__(self, nodes, is_directed=False)
-    #    super().__init__(nodes, is_directed=False)
 
     def add_edge(self,v,e):
         self.adj_list[v].append(e)
