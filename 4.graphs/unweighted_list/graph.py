@@ -6,13 +6,13 @@ from node import Vertex
 # inheriting 
 class Graph(Vertex):
 
-    def add_edge(self,v,e):
+    def add_edge(self, v, e):
         self.adj_list[v].append(e)
         if not self.is_directed:
             self.adj_list[e].append(v)
 
     # degree is num of edges incidenting
-    def degree_vertex(self,node):   
+    def degree_vertex(self, node):   
         degree = len(self.adj_list[node])
         return degree
 
