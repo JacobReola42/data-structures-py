@@ -19,7 +19,7 @@ nodes=["A","B","C","D","E"]
 graph = Graph(nodes, is_directed=False)
 
 for node in graph.nodes:
-    graph.adj_list[node] = list()
+    graph.adj_list[node] = list() # []
 
 for v,e in edges:
     graph.add_edge(v,e)
