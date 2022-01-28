@@ -3,6 +3,7 @@
 
 from vertex import Vertex
 
+# Utilizes 2D-Array
 class Graph:
     vertices = {}
     edges = []

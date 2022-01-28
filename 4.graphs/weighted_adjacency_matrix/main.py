@@ -5,6 +5,8 @@ from vertex import Vertex
 from graph import Graph
 
 g = Graph()
+
+# 9,11 not needed because of add_vertex
 a = Vertex('A')
 g.add_vertex(a)
 g.add_vertex(Vertex('B'))
