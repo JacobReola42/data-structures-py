@@ -3,9 +3,9 @@
 
 # Parent
 class Vertex:
-    def __init__(self,Nodes,is_directed=False):
+    def __init__(self, Nodes, is_directed=False):
         self.nodes = Nodes
-        self.adj_list = dict()  # {}
+        self.adj_list = dict()  #{}
         self.is_directed = is_directed
 
        # for node in self.nodes:

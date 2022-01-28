@@ -13,13 +13,14 @@ edges = [ ("A","B"),
           ("D","E")
         ]
 
-nodes=["A","B","C","D","E"]
+nodes_names = ["A","B","C","D","E"]
 
-# Change to true for unique values
-graph = Graph(nodes, is_directed=False)
+# Change to true for unique directed values
+# Graph(...) inheritance class Vertex. 
+graph = Graph(nodes_names, is_directed=False)
 
 for node in graph.nodes:
-    graph.adj_list[node] = list() # []
+    graph.adj_list[node] = list() #[]
 
 for v,e in edges:
     graph.add_edge(v,e)
