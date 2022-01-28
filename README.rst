@@ -21,6 +21,6 @@ Directories | Contains
 
 Sources
 =======
-:Joey James https://github.com/joeyajames
-:Dhaval Patel https://github.com/codebasics
-:NETSET-OS https://github.com/netsetos
+:Joey James: https://github.com/joeyajames
+:Dhaval Patel: https://github.com/codebasics
+:NETSET-OS: https://github.com/netsetos
