@@ -3,7 +3,8 @@
 
 from node import Vertex
 
-# inheriting 
+# Uses array like structure
+# Inheriting 
 class Graph(Vertex):
 
     def add_edge(self, v, e):
