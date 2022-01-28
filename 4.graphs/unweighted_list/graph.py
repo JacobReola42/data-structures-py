@@ -3,7 +3,7 @@
 
 from node import Vertex
 
-# Child inheriting 
+# inheriting 
 class Graph(Vertex):
 
     def add_edge(self,v,e):
